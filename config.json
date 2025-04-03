@@ -1,0 +1,23 @@
+{
+	"id": "PenguinModulator",
+	"name": "Penguin Modulator",
+	"display_name": "PMTH",
+	"author": ["MechaPenguin"],
+	"description": "A test bed for MechaPenguin modding attempts",
+	"prefix": "pm",
+	"main_file": "main.lua",
+	"priority": 0,
+	"badge_colour": "0B5C33",
+	"badge_text_colour": "FFFFFF",
+	"version": "0.0",
+	"dependencies": [
+		"Steamodded (>=1.0.0~ALPHA-1424a)",
+		"Lovely (>=0.7)",
+		"Balatro (>=1.0.1n)"
+	],
+	"conflicts": [
+		"SystemClock (<<1.6.3)",
+		"Cryptid (<<0.5.4)",
+		"Talisman (<=2.0.2)"
+	]
+}
