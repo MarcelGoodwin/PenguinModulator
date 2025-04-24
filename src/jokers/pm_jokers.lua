@@ -21,8 +21,8 @@ SMODS.Joker {
     blueprint_compat = true,
     eternal_compat = true,
     perishable_compat = true,
-    --atlas = 'pm_jokers_atlas',
-    pos = {x = 3, y = 0},
+    atlas = 'pm_jokers_atlas',
+    pos = {x = 2, y = 0},
     cost = 5,
 
     loc_vars = function(self, info_queue, card)
@@ -133,4 +133,13 @@ SMODS.Joker {
     perishable_compat = false,
     atlas = 'pm_jokers_atlas',
     pos = { x = 1, y = 0 },
+    soul_pos = {x = 1, y = 1},
+    cost = 25,
+
+    calculate = function(self, card, context)
+        if context.end_of_round and G.GAME.blind.boss and not context.repetition and not context.individual and not context.blueprint then
+            
+
+        end
+    end
 }
